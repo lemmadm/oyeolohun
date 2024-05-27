@@ -3,13 +3,14 @@
 <html lang="en">
 <head>
 <title>Oye-Olohun Travels & Tours</title>
-
 <link rel="icon" href="images/fav.png" sizes="64x64" />
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="utf-8">
-<meta name="keywords" content="Grand Tour Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<meta name="generator" content="lemmaiot, lemmaiot.com.ng">
+<meta name="keywords" content="travel, tours, football club, adventure, explore, destination, sports, journey"/>
+<meta name="title" content="Oyeolohun Travels and Tours - Explore the World with Adventure and Football"/>
+<meta name="description" content="Discover a unique blend of travel adventures and football excitement with Oyeolohun Travels and Tours. Explore iconic destinations, watch thrilling matches, and create unforgettable memories."/>
 
     <script>
         addEventListener("load", function () {
@@ -49,6 +50,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <script src="ofc-owl-carousel/owl.carousel.js"></script>
     <script src="ofc-js/countdown.js" type="text/javascript" charset="utf-8"></script>
     <script src="ofc-js/lightbox.js" type="text/javascript" charset="utf-8"></script>
+    <script src="facebook-plugin/facebook-script.js" type="text/javascript" charset="utf-8"></script>
+    <script src="witsec-mailform/mailform.js" type="text/javascript" charset="utf-8"></script>
     <!--[if IE]>
     	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   	<![endif]-->	
@@ -322,51 +325,72 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </section>
 <!-- //services -->
 
-<!-- how to book -->
+<!-- facbook embed -->
 <section class="package py-5">
 	<div class="container py-lg-5 py-sm-3">
 		<h2 class="heading text-capitalize text-center"> Oye-Olohun TV</h2>
-		<div class="row mt-5 text-center">
 
-			<!-- Embeded Link Facebook Link-->
-			<script src="https://cdn.commoninja.com/sdk/latest/commonninja.js" defer></script>
-			<div class="commonninja_component pid-0d69d3f3-6eff-45d4-9b63-97b4cf771afa"></div>
+		<!--
+			
+			<div class="row justify-content-center mt-4">
+				<iframe width="100%" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowtransparency="true" allow="encrypted-media" src="https://www.facebook.com/plugins/page.php?href=https://web.facebook.com/profile.php?id=100091806984149&amp;tabs=timeline,events,messages&amp;width=750&amp;height=620&amp;small_header=true&amp;adapt_container_width=true&amp;hide_cover=false&amp;hide_cta=true&amp;appId=2773163886047820"></iframe>
+			</div>
+		-->
 
-
+		<div id="iframe-container" class="row justify-content-center mt-4">
+			<iframe id="my-iframe" style="border:none;overflow:hidden;width:100%;height:100%;" scrolling="no" frameborder="0" allowtransparency="true" allow="encrypted-media" src="https://www.facebook.com/plugins/page.php?href=https://web.facebook.com/profile.php?id=100091806984149&amp;tabs=timeline,events,messages&amp;width=500&amp;height=620&amp;small_header=true&amp;adapt_container_width=true&amp;hide_cover=false&amp;hide_cta=true&amp;appId=2773163886047820"></iframe>
 		</div>
+		
+		<script>
+			function resizeIframe() {
+				var iframe = document.getElementById('my-iframe');
+				var container = document.getElementById('iframe-container');
+				var newHeight = window.innerHeight - container.offsetTop; // Calculate height based on screen height
+		
+				iframe.style.height = newHeight + 'px';
+			}
+		
+			// Call resizeIframe when the window is resized
+			window.addEventListener('resize', resizeIframe);
+		
+			// Initial call to resizeIframe
+			resizeIframe();
+		</script>
+		
+			
 	</div>
 </section>
-<!-- //how to book -->
+<!-- //facebook embed -->
 
 <!-- tour packages -->
 <section class="packages py-5">
 	<div class="container py-lg-4 py-sm-3">
 		<h3 class="heading text-capitalize text-center"> Discover our Tour Packages</h3>
-		<p class="text mt-2 mb-5 text-center">Vestibulum tellus neque, sodales vel mauris at, rhoncus finibus augue. Vestibulum urna ligula, molestie at ante ut, finibus vulputate felis.</p>
+		<p class="text mt-2 mb-5 text-center">Choose your preferred tour package from the options provided. Each package offers unique experiences tailored to your interest.</p>
 		<div class="row">
 			<div class="col-lg-3 col-sm-6">
 				<div class="image-tour position-relative">
-					<img src="images/p1.jpg" alt="" class="img-fluid" />
-					<p><span class="fa fa-tags"></span> <span>&#8358;20,000</span></p>
+					<img src="images/placeses (1).jpg" alt="" class="img-fluid" />
+					<p><span class="fa fa-tags"></span> <span>&#8358;500,000</span></p>
 				</div>
 				<div class="package-info">
-					<h6 class="mt-1"><span class="fa fa-map-marker mr-2"></span>Paris, France.</h6>
-					<h5 class="my-2">Sodales vel mauris</h5>
-					<p class="">Vestibulum tellus neque, et velit mauris at, augue.</p>
+					<h6 class="mt-1"><span class="fa fa-map-marker mr-2"></span>Dubai, UAE.</h6>
+					<h5 class="my-2">Marvel at Dubai</h5>
+					<p class="">Explore the luxury and innovation of Dubai, from the Burj Khalifa to the Palm Jumeriah.</p>
 					<ul class="listing mt-3">
-						<li><span class="fa fa-clock-o mr-2"></span>Duration : <span>10 Days</span></li>
+						<li><span class="fa fa-clock-o mr-2"></span>Duration : <span>7 Days</span></li>
 					</ul>
 				</div>
 			</div>
 			<div class="col-lg-3 col-sm-6">
 				<div class="image-tour position-relative">
-					<img src="images/p2.jpg" alt="" class="img-fluid" />
-					<p><span class="fa fa-tags"></span> <span>&#8358;20,000</span></p>
+					<img src="images/placeses (2).jpg" alt="" class="img-fluid" />
+					<p><span class="fa fa-tags"></span> <span>&#8358;650,000</span></p>
 				</div>
 				<div class="package-info">
-					<h6 class="mt-1"><span class="fa fa-map-marker mr-2"></span>Los Angles, USA.</h6>
-					<h5 class="my-2">Sodales vel mauris</h5>
-					<p class="">Vestibulum tellus neque, et velit mauris at, augue.</p>
+					<h6 class="mt-1"><span class="fa fa-map-marker mr-2"></span>United Kingdom.</h6>
+					<h5 class="my-2">Explore London</h5>
+					<p class="">Experience the rich history and vibrant culture of London, from the Tower of London to Buckingham palace.</p>
 					<ul class="listing mt-3">
 						<li><span class="fa fa-clock-o mr-2"></span>Duration : <span>10 Days</span></li>
 					</ul>
@@ -374,32 +398,33 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 			<div class="col-lg-3 col-sm-6 mt-lg-0 mt-5">
 				<div class="image-tour position-relative">
-					<img src="images/p3.jpg" alt="" class="img-fluid" />
-					<p><span class="fa fa-tags"></span> <span>&#8358;20,000</span></p>
+					<img src="images/placeses (3).jpg" alt="" class="img-fluid" />
+					<p><span class="fa fa-tags"></span> <span>&#8358;750,000</span></p>
 				</div>
 				<div class="package-info">
-					<h6 class="mt-1"><span class="fa fa-map-marker mr-2"></span>Agra, India.</h6>
-					<h5 class="my-2">Sodales vel mauris</h5>
-					<p class="">Vestibulum tellus neque, et velit mauris at, augue.</p>
+					<h6 class="mt-1"><span class="fa fa-map-marker mr-2"></span>New York, USA</h6>
+					<h5 class="my-2">New York Adventure</h5>
+					<p class="">Discover the excitement of New York City, from Times Square to Central Park.</p>
 					<ul class="listing mt-3">
-						<li><span class="fa fa-clock-o mr-2"></span>Duration : <span>10 Days</span></li>
+						<li><span class="fa fa-clock-o mr-2"></span>Duration : <span>8 Days</span></li>
 					</ul>
 				</div>
 			</div>
 			<div class="col-lg-3 col-sm-6 mt-lg-0 mt-5">
 				<div class="image-tour position-relative">
-					<img src="images/p4.jpg" alt="" class="img-fluid" />
-					<p><span class="fa fa-tags"></span> <span>&#8358;20,000</span></p>
+					<img src="images/placeses (4).jpg" alt="" class="img-fluid" />
+					<p><span class="fa fa-tags"></span> <span>&#8358;600,000</span></p>
 				</div>
 				<div class="package-info">
 					<h6 class="mt-1"><span class="fa fa-map-marker mr-2"></span>Paris, France.</h6>
-					<h5 class="my-2">Sodales vel mauris</h5>
-					<p class="">Vestibulum tellus neque, et velit mauris at, augue.</p>
+					<h5 class="my-2">Parisian Dream</h5>
+					<p class="">Fall in love with the cham of Paris, from the Eiffel Tower to the Louvre Museum.</p>
 					<ul class="listing mt-3">
-						<li><span class="fa fa-clock-o mr-2"></span>Duration : <span>10 Days</span></li>
+						<li><span class="fa fa-clock-o mr-2"></span>Duration : <span>7 Days</span></li>
 					</ul>
 				</div>
 			</div>
+			
 		</div>
 		<div class="view-package text-center mt-4">
 			<a href="packages.html">View All Packages</a>
@@ -490,6 +515,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </div>
 <!-- move top -->
 
+
+<!-- Script endocing within-->
+  
+<script src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&autoLogAppEvents=1&version=v8.0&appId=3122493341137768"></script>  
+<script src="assets/witsec-mailform/mailform.js"></script>
+
+<!-- // Script Encoding Within -->
 	
 </body>
 </html>
